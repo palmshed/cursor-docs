@@ -2,3 +2,4 @@ title: Cursor Documentation
 description: AI coding agent docs
 markdown: kramdown
 highlighter: rouge
+permalink: pretty
