@@ -149,9 +149,10 @@ footer{
   border-top:1px solid var(--border);
   color:var(--dim);
   font-size:.85rem;
+  line-height:2;
 }
 
-footer a{color:var(--dim);}
+footer a{color:var(--dim);margin:0 6px;}
 
 .slider{
   position:relative;
