@@ -7,12 +7,17 @@ jobs:
   respond:
     if: contains(github.event.issue.labels.*.name, 'invite')
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
     steps:
+      - id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.CURSOR_BOT_CLIENT_ID }}
+          private-key: ${{ secrets.CURSOR_BOT_PRIVATE_KEY }}
+          permission-issues: write
+
       - name: Post acknowledgment
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           gh issue comment "${{ github.event.issue.number }}" \
             --repo "${{ github.repository }}" \
