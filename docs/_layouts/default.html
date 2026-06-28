@@ -4,22 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% if page.title %}{{ page.title }} — {% endif %}Cursor Docs</title>
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 
 <header>
-  <div class="logo">▌ <a href="/" style="color:inherit;text-decoration:none">CURSOR</a></div>
+  <div class="logo">▌ <a href="{{ '/' | relative_url }}" style="color:inherit;text-decoration:none">CURSOR</a></div>
   <div class="meta">documentation</div>
   <nav>
-    <a href="/">Home</a>
-    <a href="/docs/architecture/">Architecture</a>
-    <a href="/docs/engineering/">Engineering</a>
-    <a href="/docs/planner/">Planner</a>
-    <a href="/docs/telemetry/">Telemetry</a>
-    <a href="/docs/ux/">UX</a>
-    <a href="/docs/proposals/">Proposals</a>
-    <a href="/docs/release/">Release</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/architecture/' | relative_url }}">Architecture</a>
+    <a href="{{ '/engineering/' | relative_url }}">Engineering</a>
+    <a href="{{ '/planner/' | relative_url }}">Planner</a>
+    <a href="{{ '/telemetry/' | relative_url }}">Telemetry</a>
+    <a href="{{ '/ux/' | relative_url }}">UX</a>
+    <a href="{{ '/proposals/' | relative_url }}">Proposals</a>
+    <a href="{{ '/release/' | relative_url }}">Release</a>
   </nav>
 </header>
 
