@@ -9,10 +9,10 @@
 </head>
 <body>
 
+<div class="page">
 <header>
   <div class="logo">▌ <a href="{{ '/' | relative_url }}" style="color:inherit;text-decoration:none">CURSOR</a></div>
   <div class="meta">documentation</div>
-  <span id="layout-toggle" title="Toggle layout">▭</span>
   <nav>
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/architecture/' | relative_url }}">Architecture</a>
@@ -75,5 +75,7 @@ if(lt){lt.addEventListener('click', function(){
 });}
 try{if(localStorage.getItem('layout') === 'landscape'){document.body.classList.add('landscape');if(lt)lt.textContent='◻';}}catch(e){}
 </script>
+<span id="layout-toggle" title="Toggle layout">▭</span>
+</div>
 </body>
 </html>
