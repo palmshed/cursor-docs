@@ -7,6 +7,8 @@ jobs:
   respond:
     if: contains(github.event.issue.labels.*.name, 'invite')
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - name: Post acknowledgment
         env:
