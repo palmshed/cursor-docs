@@ -12,13 +12,16 @@
 }
 
 body{
-  max-width:680px;
+  max-width:720px;
   margin:0 auto;
-  padding:48px 24px 96px;
+  padding:48px 32px 96px;
   background:var(--bg);
   color:var(--fg);
-  font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  font:15px/1.7 system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  animation:fade-in .5s ease both;
 }
+
+@keyframes fade-in{from{opacity:0;}}
 
 a{color:inherit;}
 a:hover{opacity:.8;}
