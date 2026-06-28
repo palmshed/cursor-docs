@@ -1,0 +1,10 @@
+title: Cursor Documentation
+description: AI coding agent docs
+markdown: kramdown
+highlighter: rouge
+defaults:
+  -
+    scope:
+      path: "docs"
+    values:
+      layout: default

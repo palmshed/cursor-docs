@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% if page.title %}{{ page.title }} — {% endif %}Cursor Docs</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">▌ <a href="/" style="color:inherit;text-decoration:none">CURSOR</a></div>
+  <div class="meta">documentation</div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/docs/architecture/">Architecture</a>
+    <a href="/docs/engineering/">Engineering</a>
+    <a href="/docs/planner/">Planner</a>
+    <a href="/docs/telemetry/">Telemetry</a>
+    <a href="/docs/ux/">UX</a>
+    <a href="/docs/proposals/">Proposals</a>
+    <a href="/docs/release/">Release</a>
+  </nav>
+</header>
+
+<div class="content">
+{{ content }}
+</div>
+
+<footer>
+  <a href="https://github.com/bniladridas/cursor">GitHub</a> ·
+  <a href="https://github.com/bniladridas/cursor/releases">Releases</a> ·
+  Apache 2.0
+</footer>
+
+</body>
+</html>
