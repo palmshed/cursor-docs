@@ -57,7 +57,9 @@
   </div>
 </footer>
 </div>
+<div class="bottom-glow" id="bottom-glow"></div>
 <span id="layout-toggle" title="Toggle layout">▭</span>
+<div class="layout-hint" id="layout-hint">toggle portrait / landscape</div>
 <script>
 document.addEventListener('click', function(e){
   var dd = document.getElementById('invite-dd');
@@ -74,6 +76,21 @@ if(lt){lt.addEventListener('click', function(){
   try{localStorage.setItem('layout', document.body.classList.contains('landscape') ? 'landscape' : 'portrait');}catch(e){}
 });}
 try{if(localStorage.getItem('layout') === 'landscape'){document.body.classList.add('landscape');}}catch(e){}
+try{
+  if(!localStorage.getItem('hint-dismissed')){
+    var h = document.getElementById('layout-hint');
+    if(h){h.classList.add('show');setTimeout(function(){h.classList.remove('show');},3000);}
+    localStorage.setItem('hint-dismissed','1');
+  }
+}catch(e){}
+var g = document.getElementById('bottom-glow');
+function checkBottom(){
+  if(document.documentElement.scrollHeight <= window.innerHeight) return;
+  var b = document.documentElement.scrollHeight - window.innerHeight - window.scrollY;
+  if(b < 80){g.classList.add('show');}else{g.classList.remove('show');}
+}
+window.addEventListener('scroll',checkBottom,{passive:true});
+checkBottom();
 </script>
 </body>
 </html>
