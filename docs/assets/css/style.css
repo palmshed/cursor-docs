@@ -150,6 +150,37 @@ footer{
 
 footer a{color:var(--dim);}
 
+.dropdown{
+  position:relative;
+  display:inline-block;
+  cursor:pointer;
+  z-index:1;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  bottom:100%;
+  left:50%;
+  transform:translateX(-50%);
+  margin-bottom:8px;
+  background:var(--bg);
+  border:1px solid var(--border);
+  padding:8px 12px;
+  white-space:nowrap;
+  font-size:13px;
+  color:var(--dim);
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+.dropdown-content a{
+  color:var(--fg);
+  text-decoration:none;
+}
+
 strong{color:var(--fg);}
 
 img{max-width:100%;}
