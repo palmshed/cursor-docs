@@ -206,7 +206,8 @@ footer > div:first-child{display:flex;justify-content:space-between;}
 .dropdown.open .dropdown-menu{display:block;}
 .dropdown-menu a{display:block;padding:4px 16px;color:var(--dim);text-decoration:none;font-size:13px;margin:0;}
 .dropdown-menu a:hover{color:var(--fg);background:var(--border);}
-#layout-toggle{position:fixed;top:12px;right:12px;cursor:pointer;color:var(--dim);font-size:13px;user-select:none;line-height:1;padding:4px 8px;opacity:.5;transition:transform .3s ease,opacity .15s;z-index:100;display:inline-block;will-change:transform,opacity;}
+#layout-toggle{position:fixed;top:12px;right:12px;cursor:pointer;color:var(--dim);user-select:none;line-height:1;padding:4px;opacity:.5;transition:transform .3s ease,opacity .15s;z-index:100;display:inline-block;will-change:transform,opacity;}
+#layout-toggle svg{display:block;width:16px;height:16px;}
 #layout-toggle:hover{opacity:1;}
 body:not(.landscape) #layout-toggle{transform:rotate(90deg);}
 body.landscape #layout-toggle{transform:rotate(0deg);}
