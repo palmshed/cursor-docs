@@ -176,6 +176,8 @@ footer > div + div{margin-top:.5em;}
   font-size:13px;
 }
 
+.slider-text a{color:var(--dim);text-decoration:none;}
+
 .slider:hover .slider-icon{
   transform:translateY(-100%);
 }
