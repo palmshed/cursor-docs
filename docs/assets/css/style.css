@@ -13,6 +13,9 @@
 
 body{
   max-width:720px;
+}
+body.landscape{max-width:960px;}
+body{
   margin:0 auto;
   padding:48px 32px 96px;
   background:var(--bg);
@@ -194,6 +197,8 @@ footer > div:first-child{display:flex;justify-content:space-between;}
 .dropdown.open .dropdown-menu{display:block;}
 .dropdown-menu a{display:block;padding:4px 16px;color:var(--dim);text-decoration:none;font-size:13px;margin:0;}
 .dropdown-menu a:hover{color:var(--fg);background:var(--border);}
+.layout-toggle{cursor:pointer;color:var(--dim);margin:0 6px;font-size:13px;user-select:none;}
+.layout-toggle:hover{opacity:.8;}
 .dropdown-trigger{color:var(--dim);margin:0 6px;}
 .dropdown-trigger:hover{opacity:.8;}
 
