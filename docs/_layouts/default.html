@@ -57,6 +57,7 @@
   </div>
 </footer>
 
+<span id="layout-toggle" title="Toggle layout">▭</span>
 <script>
 document.addEventListener('click', function(e){
   var dd = document.getElementById('invite-dd');
@@ -75,7 +76,6 @@ if(lt){lt.addEventListener('click', function(){
 });}
 try{if(localStorage.getItem('layout') === 'landscape'){document.body.classList.add('landscape');if(lt)lt.textContent='◻';}}catch(e){}
 </script>
-<span id="layout-toggle" title="Toggle layout">▭</span>
 </div>
 </body>
 </html>
